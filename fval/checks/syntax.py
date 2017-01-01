@@ -23,7 +23,10 @@ def get_parsed_config(markup=None, unit_content=None):
     parsed_config = None
     level = None
     message = None
-    if markup == 'yaml':
+    if not markup:
+        message = CHECK_NAME + ': Check failed to run. Markup type not specified.'
+        level = 'ERROR'
+    elif markup == 'yaml':
         try:
             parsed_config = yaml.load(unit_content)
         except yaml.YAMLError:
@@ -61,7 +64,7 @@ def get_parsed_config(markup=None, unit_content=None):
             level = 'WARN'
             message = 'Required: JAVA_PROPERTIES'
     else:
-        message = 'Check failed to run. Unrecognised markup type specified.'
+        message = CHECK_NAME + ': Check failed to run. Unrecognised markup type specified.'
         level = 'ERROR'
     return dict(message=message, level=level, parsed_config=parsed_config)
 
@@ -107,9 +110,9 @@ def process_regexes(regexes=None, parsed_config=None, markup=None):
 
 
 def run(**kwargs):
-    regexes = kwargs['check_args']['regexes']
+    regexes = kwargs['check_args'].get("regexes")
     result = get_parsed_config(
-        markup=kwargs['check_args']['markup'],
+        markup=kwargs['check_args'].get("markup"),
         unit_content=kwargs['unit_content'])
     if result.get('level'):
         return dict(message=result.get('message'), level=result.get('level'))
