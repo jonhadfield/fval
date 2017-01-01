@@ -5,6 +5,7 @@ fval
 .. image:: https://img.shields.io/badge/status-alpha-orange.svg
     :target: https://travis-ci.org/jonhadfield/fval
 
+
 fval is command-line tool for validating files against checks you define in YAML files
 
 Tests currently available:
@@ -22,13 +23,15 @@ Installation
 
 Note: Not yet on pypi whilst still in alpha.
 
-using pip:
+**pip**
 
 ``pip install https://github.com/jonhadfield/fval/archive/devel.zip``
 
-manual:
+**manual**
 
 ``git clone https://github.com/jonhadfield/fval``
+
+``cd fval``
 
 ``python setup.py install``
 
