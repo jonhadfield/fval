@@ -1,0 +1,20 @@
+sudo: required
+dist: precise
+language: python
+python:
+  - "3.5"
+  - "3.4"
+  - "3.3"
+  - "2.7"
+  - "2.6"
+  - "pypy"
+  - "pypy3"
+  - "nightly"
+install:
+  - pip install coveralls
+  - pip install tox-travis
+script:
+  - tox
+after_success:
+  - coveralls
+  - bash <(curl -s https://codecov.io/bash)

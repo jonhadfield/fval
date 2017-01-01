@@ -1,0 +1,18 @@
+---
+mappings:
+  - extension: py
+    templates:
+      - python
+      - text
+  - extension: rb
+    templates:
+      - ruby
+
+templates:
+  python:
+    mime_type: text/plain
+    strict: False
+    command:
+      script: flake8
+  text:
+    mime_type: text/plain

@@ -1,0 +1,6 @@
+---
+mime_type: text/x-pythonj
+command:
+  script: pycodestyle
+  args: '--ignore E402,F403,E501'
+  success_exit_code: 0

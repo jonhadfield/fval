@@ -1,0 +1,44 @@
+---
+# Map a file extension to one or more templates
+mappings:
+  - extension: py
+    templates:
+      - python
+  - extension: txt
+    templates:
+      - text
+      - utf8
+  - extension: out
+    templates:
+      - text
+  - extension: xml
+    templates:
+      - text
+      - xml
+  - extension: ini
+    templates:
+      - text
+      - ini
+  - extension: yml
+    templates:
+      - text
+      - yml
+
+# Map a template to a number of checks
+templates:
+  python:
+    mime_type: text/plain
+    command:
+      script: flake8
+      args: '--hang-closing'
+      success_exit_code: 0
+  text:
+     mime_type: text/plain
+  xml:
+     markup: xml
+  ini:
+     mime_type: text/plain
+     markup: ini
+  yml:
+     mime_type: text/plain
+     markup: yml

@@ -1,0 +1,14 @@
+---
+mime_type: text
+markup: xml
+syntax:
+  markup: "java_properties"
+  regexes:
+    - endpoint.url: "^myval1.*$"
+    - user: '^\w+$'
+    - kvp2: "^myval2.*$"
+    - kvp3: "^myval3.*$"
+
+
+
+

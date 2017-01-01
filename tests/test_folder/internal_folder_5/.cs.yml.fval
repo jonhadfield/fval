@@ -1,0 +1,14 @@
+---
+mime_type: text/plain
+markup: yaml
+syntax:
+  markup: yaml
+  regexes:
+    - kvp1: "^myval1.*$"
+    - kvp1: "^myval5.*$"
+    - kvp2: "^myval2.*$"
+    - kvp3: "^myval3.*$"
+
+
+
+

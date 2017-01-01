@@ -1,0 +1,25 @@
+---
+mappings:
+  - extension: py
+    templates:
+      - python
+  - extension: txt
+    templates:
+      - text
+      - utf8
+  - extension: bin
+    templates:
+      - binary
+
+templates:
+  python:
+    mime_type: text/plain
+    command:
+      script: flake8
+      args:
+  binary:
+    mime_type: text/plain
+    markup: yaml
+  text:
+    mime_type: text/plain
+    markup: yaml

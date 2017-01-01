@@ -1,0 +1,13 @@
+[run]
+branch = True
+
+[report]
+omit =
+    setup.py
+    */fval/external/*
+exclude_lines =
+    pragma: no cover
+    pragma: no branch
+    if PY2
+    if PY3
+

@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+
+import fval
+
+if __name__ == '__main__':
+    fval.main()

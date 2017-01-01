@@ -1,0 +1,13 @@
+---
+exclusions:
+  dirs:
+    - depth_test_level_3
+
+mappings:
+  - extension: txt
+    templates:
+      - text
+
+templates:
+  text:
+    mime_type: text/plain

@@ -1,0 +1,13 @@
+---
+mime_type: text/plain
+markup: "yaml"
+syntax:
+  markup: "yaml"
+  regexes:
+    - dogs.0.name: "^loki$"
+    - dogs.1.name: "^peanut1$"
+    - dogs.2.name: "^frankie"
+dodgy_check:
+  first_param: 1
+
+
