@@ -35,7 +35,26 @@ Note: Not yet on pypi whilst still in alpha.
 
 ``python setup.py install``
 
-Example Usage
--------------
+Examples
+--------
 
-TBC
+**Ensuring endpoint URLs are secure**
+
+Create a file called test.yml with the following content:
+
+::
+
+    ---
+    endpoint_url: http://www.example.com
+
+
+Create a validator file called .test.yml.fval with content:
+
+::
+
+    syntax:
+      markup: yaml
+      regexes:
+        - endpoint_url: "^https://"
+
+Running ``fval`` will return a warning that the regular expression doesn't match. Modify the endpoint_url to use https and the next run will pass.
