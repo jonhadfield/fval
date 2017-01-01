@@ -5,6 +5,7 @@ fval
 .. image:: https://img.shields.io/badge/status-alpha-orange.svg
     :target: https://travis-ci.org/jonhadfield/fval
 
+|
 
 fval is command-line tool for validating files against checks you define in YAML files
 
