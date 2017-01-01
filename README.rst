@@ -7,9 +7,12 @@ fval
 
 |
 
-fval is command-line tool for validating files against checks you define in YAML files
 
-Tests currently available:
+The idea of fval is to validate one or more files, e.g. a source code repository, against a set of tests and then report the findings.
+Validation tests are written in YAML files and then run against single files, single directories or an entire filesystem hierarchy.
+
+
+Currently available tests:
 
 **syntax**   supply a list of keys and regular expressions to validate the file contents, e.g. a YAML configuration file
 
@@ -39,7 +42,7 @@ Note: Not yet on pypi whilst still in alpha.
 Examples
 --------
 
-**Ensuring endpoint URLs are secure**
+**Ensuring endpoint URLs are secure in a single configuration file**
 
 Create a file called test.yml with the following content:
 
