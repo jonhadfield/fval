@@ -33,11 +33,13 @@ Note: Not yet on pypi whilst still in alpha.
 
 **manual**
 
-``git clone https://github.com/jonhadfield/fval``
+::
 
-``cd fval``
 
-``python setup.py install``
+    git clone https://github.com/jonhadfield/fval
+    cd fval
+    python setup.py install
+
 
 Examples
 --------
