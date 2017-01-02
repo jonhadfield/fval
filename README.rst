@@ -14,7 +14,7 @@ Validation tests are written in YAML files and then run against single files, si
 
 Currently available tests:
 
-**syntax**   supply a list of keys and regular expressions to validate the file contents, e.g. a YAML configuration file
+**syntax**   supply a list of keys and regular expressions to validate the file contents, e.g. a YAML or Java properties file
 
 **command**    pass the file and arguments to any application and specify the expected exit code
 
@@ -44,7 +44,7 @@ Note: Not yet on pypi whilst still in alpha.
 Examples
 --------
 
-**Ensuring endpoint URLs are secure in a single configuration file**
+**Ensuring URLs are secure in a single configuration file**
 
 Create a file called test.yml with the following content:
 
