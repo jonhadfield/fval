@@ -22,6 +22,14 @@ Currently available tests:
 
 **mime type**    specify which mime type the file should be recognised as
 
+
+Compatibility
+-------------
+Python 2.7 and above
+
+Tested on Linux and macOS with limited testing on Windows 10
+
+
 Installation
 ------------
 
