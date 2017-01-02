@@ -10,6 +10,7 @@ fval
 
 The idea of fval is to validate one or more files, e.g. a source code repository, against a set of tests and then report the findings.
 Validation tests are written in YAML files and then run against single files, single directories or an entire filesystem hierarchy.
+
 fval returns an exit code of 0 if all the tests pass, so it can be applied as git pre-commit hook for checking configuration files are valid before allowing them to be committed.
 
 
